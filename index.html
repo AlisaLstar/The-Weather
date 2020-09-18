@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>The Weather</title>
+</head>
+<body>
+    <!-- create main nav -->
+    <div class="container-fluid">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+          <h1 class="text">Weather Dashboard</h1>
+          <!-- need to center weather dashboard -->
+        <!-- </nav> -->
+    </div>
+
+
+    <!-- create search area input city-->
+    <div class="wrap-div">
+    <div class="row">
+        <div class="col-md-6" id="searchCity">
+        <div id= "inputCity">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+        <!-- add list of cit -->
+        <div id="cityLists">
+            <ul>
+                <li class="city0">city0</li>
+                <li class="city1">city1</li>
+                <li class="city2">city2</li>
+                <li class="city3">city3</li>
+                <li class="city4">city4</li>
+            </ul>
+        </div>
+        </div>
+        <!-- div for show location and info -->
+        <div class="col-lg-3">
+            <div class="city">
+                <h1 class="date">(date)</h1>
+                <img src="weather-img" alt="weather image">
+            </div>
+            <div class="temperatur">temperatur</div>
+            <div class="humidity">humidity</div>
+            <div class="wind">wind</div>
+            <div class="UV-index">UV index</div>
+
+        </div>
+        <!-- 5 day forecast -->
+        <div class="col-md-9">
+            <div class="text-center">
+                <h2>5 Day Forecast</h2>
+            </div>
+        <!-- 5 days forcast -->
+        <div class="row no-gutters position">
+            <div class="col-lg mx-1 pb-2">
+              <div class="card text-white bg-primary" id="day-1">
+                <div class="card-body">
+                  <h5 class="card-title" id="date-1">Day One</h5>
+                  <div class="weather-img">
+                    <img alt="day-1-weather-img" id="weather-img-1" />
+                  </div>
+                  <p class="card-text" id="temp-1"></p>
+                  <p class="card-text" id="humidity-1"></p>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg mx-1 pb-2">
+                <div class="card text-white bg-primary" id="day-2">
+                  <div class="card-body">
+                    <h5 class="card-title" id="date-2">Day Two</h5>
+                    <div class="weather-img">
+                      <img alt="day-2-weather-img" id="weather-img-2" />
+                    </div>
+                    <p class="card-text" id="temp-2"></p>
+                    <p class="card-text" id="humidity-2"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg mx-1 pb-2">
+                <div class="card text-white bg-primary" id="day-3">
+                  <div class="card-body">
+                    <h5 class="card-title" id="date-3">Day Three</h5>
+                    <div class="weather-img">
+                      <img alt="day-3-weather-img" id="weather-img-3" />
+                    </div>
+                    <p class="card-text" id="temp-3"></p>
+                    <p class="card-text" id="humidity-3"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg mx-1 pb-2">
+                <div class="card text-white bg-primary" id="day-4">
+                  <div class="card-body">
+                    <h5 class="card-title" id="date-4">Day Fouth</h5>
+                    <div class="weather-img">
+                      <img alt="day-4-weather-img" id="weather-img-4" />
+                    </div>
+                    <p class="card-text" id="temp-4"></p>
+                    <p class="card-text" id="humidity-4"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg mx-1 pb-2">
+                <div class="card text-white bg-primary" id="day-5">
+                  <div class="card-body">
+                    <h5 class="card-title" id="date-5">Day Fifth</h5>
+                    <div class="weather-img">
+                      <img alt="day-5-weather-img" id="weather-img-5" />
+                    </div>
+                    <p class="card-text" id="temp-5"></p>
+                    <p class="card-text" id="humidity-5"></p>
+                  </div>
+                </div>
+              </div>
+      
+     <!-- end div -->
+        </div>
+        </div>
+     <!-- end div -->
+
+     <!-- footer -->
+     <footer class="text-footer">
+         <h2>Footer</h2>
+     </footer>
+     <script src="script.js"></script>
+   
+</body>

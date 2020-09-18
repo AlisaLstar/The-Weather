@@ -1,0 +1,21 @@
+.text {
+    font-size: 50px;
+    text-align:center; 
+    text-emphasis-color: darkblue;
+    background-color:green;
+    padding-bottom: 50px;
+    padding-top: 5px;
+    
+}
+text.footer{
+    text-align: center;
+}
+.container-fluid {
+    padding-bottom:0;
+
+}
+
+.position {
+    position: relative;
+    align-items: center;
+}
