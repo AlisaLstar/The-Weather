@@ -1,4 +1,4 @@
-.text {
+.nav-text {
     font-size: 50px;
     text-align:center; 
     text-emphasis-color: darkblue;
@@ -7,6 +7,15 @@
     padding-top: 5px;
     
 }
+.wrap-div {
+    padding: 10px 10px 10px 10px;
+}
+
+.dash {
+    list-style-type: none;
+}
+
+
 text.footer{
     text-align: center;
 }

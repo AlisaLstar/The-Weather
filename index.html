@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Some tags are vital for SEO. Others have little or no impact on rankings. Here's every type of meta tag you need to know about.The purpose of a meta description is to reflect the essence of a page, but with more details and context."/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./Assets/style.css" />
     <title>The Weather</title>
 </head>
 <body>
     <!-- create main nav -->
     <div class="container-fluid">
         <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-          <h1 class="text">Weather Dashboard</h1>
+          <h1 class="nav-text">Weather Dashboard</h1>
           <!-- need to center weather dashboard -->
         <!-- </nav> -->
     </div>
@@ -20,38 +23,50 @@
 
     <!-- create search area input city-->
     <div class="wrap-div">
-    <div class="row">
-        <div class="col-md-6" id="searchCity">
-        <div id= "inputCity">
-        <form class="form-inline">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        </div>
-        <!-- add list of cit -->
-        <div id="cityLists">
-            <ul>
-                <li class="city0">city0</li>
-                <li class="city1">city1</li>
-                <li class="city2">city2</li>
-                <li class="city3">city3</li>
-                <li class="city4">city4</li>
-            </ul>
-        </div>
-        </div>
-        <!-- div for show location and info -->
-        <div class="col-lg-3">
-            <div class="city">
-                <h1 class="date">(date)</h1>
-                <img src="weather-img" alt="weather image">
-            </div>
-            <div class="temperatur">temperatur</div>
-            <div class="humidity">humidity</div>
-            <div class="wind">wind</div>
-            <div class="UV-index">UV index</div>
 
+    <div class="row">
+      <!-- main row -->
+
+      <!-- search div -->
+        <div class="col-md-3" id="searchCity">
+          <div id= "inputCity">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" ><i class="fas fa-search"></i></button>
+          </form>
+          </div>
+          
+          <!-- add list of cit -->
+          <div id="cityLists">
+              <ul>
+                  <li class="city0">city0</li>
+                  <li class="city1">city1</li>
+                  <li class="city2">city2</li>
+                  <li class="city3">city3</li>
+                  <li class="city4">city4</li>
+              </ul>
+          </div>
         </div>
+        <!-- end city search div -->
+        
+        <!-- div for show location and info -->
+        <div class="col-lg-9">
+          <!-- div second main column -->
+          <div class="row">
+              <ul class="dash">
+                <div class="city">
+                  <h1 class="date">(date)</h1>
+                  <img src="weather-img" alt="weather image">
+              </div>
+                <li class="temperatur">temperature: </li>
+                <li class="humidity">humidity: </li>
+                <li class="wind">wind: </li>
+                <li class="UV-index">UV index: </li>
+              </ul>
+          </div>
+           
         <!-- 5 day forecast -->
+        <div class="row">
         <div class="col-md-9">
             <div class="text-center">
                 <h2>5 Day Forecast</h2>
@@ -118,16 +133,35 @@
                   </div>
                 </div>
               </div>
-      
+            </div>
      <!-- end div -->
         </div>
-        </div>
-     <!-- end div -->
 
+        </div>
+     <!-- end div -->
+        </div>
+      </div>
+     
      <!-- footer -->
-     <footer class="text-footer">
+     <!-- <footer class="text-footer">
          <h2>Footer</h2>
-     </footer>
+     </footer> -->
+     <div class="card text-center fixed-bottom">
+      <div class="card-header">
+        Featured
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+      <div class="card-footer text-muted">
+        &copy; Copyright 2020 | Alisa Lungsuay
+      </div>
+    </div>
+     <!-- end wrape div -->
+    </div>
+
      <script src="script.js"></script>
    
 </body>
