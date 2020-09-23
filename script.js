@@ -45,8 +45,10 @@ $(document).ready(function(){
     
         console.log(response);
           // forecast date
+          // var day = moment().format('MMMM Do YYYY);
 
           $("#date-1").text("Date: " + response.daily[1]);
+
           //$("#date-2").text("Date: " + response.date_iso.split("T")[2]);
           // $("#date-3").text("Date: " + response.date_iso.split("T")[3]);
           // $("#date-4").text("Date: " + response.date_iso.split("T")[4]);
@@ -55,17 +57,14 @@ $(document).ready(function(){
           // forecast icon images
 //          var iconIm1 = ("<img src='http://openweathermap.org/img/w/" + response.daily[1].weather[0].icon + ".png'>");
           $("#icon1").attr('src', 'http://openweathermap.org/img/w/' + response.daily[1].weather[0].icon +'.png');
-          var iconIm2 = ("<img src='http://openweathermap.org/img/w/" + response.weather[2].icon + ".png'>");
-          $("#icon2").append(iconIm2);
-          var iconIm3 = ("<img src='http://openweathermap.org/img/w/" + response.weather[3].icon + ".png'>");
-          $("#icon3").append(iconIm3);
-          var iconIm4 = ("<img src='http://openweathermap.org/img/w/" + response.weather[4].icon + ".png'>");
-          $("#icon4").append(iconIm4);
-          var iconIm5 = ("<img src='http://openweathermap.org/img/w/" + response.weather[5].icon + ".png'>");
-          $("#icon5").append(iconIm5);
+          $("#icon2").attr('src', 'http://openweathermap.org/img/w/' + response.daily[2].weather[0].icon +'.png');
+          $("#icon3").attr('src', 'http://openweathermap.org/img/w/' + response.daily[3].weather[0].icon +'.png');
+          $("#icon4").attr('src', 'http://openweathermap.org/img/w/' + response.daily[4].weather[0].icon +'.png');
+          $("#icon5").attr('src', 'http://openweathermap.org/img/w/' + response.daily[5].weather[0].icon +'.png');
     
     
           // temperature (F)
+          
           var tempF1 = (response.daily[1].temp - 273.15) * 1.80 + 32;
           var tempF2 = (response.daily[2].temp - 273.15) * 1.80 + 32;
           var tempF3 = (response.daily[3].temp - 273.15) * 1.80 + 32;
@@ -94,7 +93,6 @@ $(document).ready(function(){
         var iconIm = ("<img src='http://openweathermap.org/img/w/" + response.weather[0].icon + ".png'>");
         $("#weather-icon").append(iconIm);
         
-
         var tempF = (response.main.temp - 273.15) * 1.80 + 32;
         $("#current-temp").text("Temperature in ( °F ): " + tempF.toFixed(2));
         $("#humidity").text("Humidity: " + response.main.humidity);
