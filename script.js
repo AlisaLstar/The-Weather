@@ -45,7 +45,21 @@ $(document).ready(function(){
     
         console.log(response);
           // forecast date: still need to work on it!
-          // var day = moment().format('MMMM Do YYYY);
+         
+          var currentDay = moment().format("MMMM Do YYYY");
+          $("#current-date").text(currentDay);
+
+          var forecastDay1 = moment().add(1, 'days').calendar(); 
+          $("#date-1").text(forecastDay1);
+          var forecastDay2 = moment().add(2, 'days').calendar(); 
+          $("#date-2").text(forecastDay2);
+          var forecastDay3 = moment().add(3, 'days').calendar(); 
+          $("#date-3").text(forecastDay3);
+          var forecastDay4 = moment().add(4, 'days').calendar(); 
+          $("#date-4").text(forecastDay4);
+          var forecastDay5 = moment().add(5, 'days').calendar(); 
+          $("#date-5").text(forecastDay5);
+
           // $("#date-1").text("Date: " + response.date_iso.split("T")[1]);
           // $("#date-2").text("Date: " + response.date_iso.split("T")[2]);
           // $("#date-3").text("Date: " + response.date_iso.split("T")[3]);
@@ -120,7 +134,7 @@ $(document).ready(function(){
         }
         // current-date
 
-        $("#current-date").text(response.date_iso.split("T")[0]);
+        // $("#current-date").text(response.date_iso.split("T")[0]);
         console.log(response);
     
       });

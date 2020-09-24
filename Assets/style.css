@@ -29,3 +29,9 @@ text.footer{
     position: relative;
     align-items: center;
 }
+
+#card-foot {
+    background-color:lightgreen;
+    opacity: 80%;
+    
+}
