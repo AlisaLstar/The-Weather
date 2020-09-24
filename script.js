@@ -44,10 +44,8 @@ $(document).ready(function(){
         }).then(function(response){
     
         console.log(response);
-          // forecast date
+          // forecast date: still need to work on it!
           // var day = moment().format('MMMM Do YYYY);
-
-         
           // $("#date-1").text("Date: " + response.date_iso.split("T")[1]);
           // $("#date-2").text("Date: " + response.date_iso.split("T")[2]);
           // $("#date-3").text("Date: " + response.date_iso.split("T")[3]);
