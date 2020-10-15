@@ -49,15 +49,15 @@ $(document).ready(function(){
           var currentDay = moment().format("MMMM Do YYYY");
           $("#current-date").text(currentDay);
 
-          var forecastDay1 = moment().add(1, 'days').calendar(); 
+          var forecastDay1 = moment().add(1, 'days').format(" D-M-YY"); 
           $("#date-1").text(forecastDay1);
-          var forecastDay2 = moment().add(2, 'days').calendar(); 
+          var forecastDay2 = moment().add(2, 'days').format(" D-M-YY");
           $("#date-2").text(forecastDay2);
-          var forecastDay3 = moment().add(3, 'days').calendar(); 
+          var forecastDay3 = moment().add(3, 'days').format(" D-M-YY");
           $("#date-3").text(forecastDay3);
-          var forecastDay4 = moment().add(4, 'days').calendar(); 
+          var forecastDay4 = moment().add(4, 'days').format(" D-M-YY");
           $("#date-4").text(forecastDay4);
-          var forecastDay5 = moment().add(5, 'days').calendar(); 
+          var forecastDay5 = moment().add(5, 'days').format(" D-M-YY");
           $("#date-5").text(forecastDay5);
 
           // $("#date-1").text("Date: " + response.date_iso.split("T")[1]);
